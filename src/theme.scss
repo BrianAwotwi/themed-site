@@ -1,0 +1,175 @@
+// theme selector
+
+.theme-select {
+    display: inline-block;
+    position: relative;
+    margin-left: 3.5rem;
+}
+
+.theme-options {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px 0;
+    position: absolute;
+    background-color: #dadada;
+    min-width: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    div {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        margin: 2px 10px;
+        border: 1px solid #000;
+        display: inline-block;
+        opacity: 0.5;
+        &.active {
+            opacity: 1;
+            border: 1px solid #fff;
+        }
+    }
+
+    #theme-light {
+        background: #fff;
+    }
+    
+    #theme-dark {
+        background: #717171;
+    }
+
+    #theme-cream {
+        background: #c9a981;
+    }
+
+    #theme-green {
+        background: #204209;
+    }
+
+    #theme-purple {
+        background: #3b0637;
+    }
+
+    #theme-pink {
+        background: #cc4f8d;
+    }
+
+    #theme-blue {
+        background: #5337ce;
+    }
+
+
+    #theme-citrus {
+        background: #ffb731;
+    }
+}
+
+.displayed-theme {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 12rem;
+}
+
+.theme-options div {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+
+.theme-select:hover .theme-options {
+    display: block;
+}
+
+//theme layout
+
+.App.Light {
+    .promotional-banner, .footer {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.App.Dark {
+
+    background-color: #717171;
+    color: #fff;
+
+    .promotional-banner, .footer {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.App.Cream  {
+
+    background-color: #ffebd0;
+    color: #000;
+
+    .promotional-banner, .footer {
+        background: #c9a981;
+        color: #000;
+    }
+}
+
+.App.Green {
+
+    background-color: #548534;
+    color: #fff;
+
+    .promotional-banner, .footer {
+        background-color: #204209;
+        color: #fff;
+    }
+}
+
+.App.Purple {
+
+    background: #702c6b;
+    color: #fff;
+
+    .promotional-banner, .footer {
+        background: #3b0637;
+        color: #fff;
+    }
+}
+
+.App.Pink {
+
+    background-color: #ca87a8;
+    color: #fff;
+
+    .promotional-banner, .footer {
+        background-color: #cc4f8d;
+        color: #fff;
+    }
+}
+
+.App.Blue {
+
+    background-color: #7863d6;
+    color: #fff;
+
+    .promotional-banner, .footer {
+        background-color: #5337ce;
+        color: #fff;
+    }
+}
+
+.App.Citrus {
+
+    background-color: #ffb731;
+    color: #000;
+
+    .promotional-banner, .footer {
+        background-color: #d44c0d;
+        color: #000;
+    }
+}

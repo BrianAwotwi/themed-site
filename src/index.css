@@ -1,0 +1,285 @@
+html {
+  box-sizing:content-box;
+  font-family: Non-Seasonal Geo,sans-serif;
+  font-size: 13px;
+  height: 100%;
+  letter-spacing: .13px;
+  line-height: 1.5384;
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.promotional-banner {
+  display: flex;
+  background: #000;
+  color: #fff;
+  height: 36.25px;
+  line-height: 1.25;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 3.5rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  letter-spacing: .13px;
+  line-height: 1.5384;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.header-utilities {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 50%;
+}
+
+.search-container, .checkout-bag, .bookmark {
+  margin-right: 2rem;
+  letter-spacing: .13px;
+  line-height: 1.5384;
+  font-size: 175%;
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #000;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin-right: 16px;
+  padding-right: 8px;
+}
+
+.slideshow-container {
+  display: flex;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.slide-image:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  display: block;
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 8rem;
+}
+
+.overlay-cta {
+  display: block;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 4rem;
+}
+
+.slide-image {
+  flex: 1;
+  position: relative;
+  width: 50%;
+}
+
+.slide-image img{
+  width: 100%;
+  height: auto;
+}
+
+.carousel, .stories-container {
+  margin-top: 4rem;
+  text-align: left;
+  margin: 0 3.5rem;
+}
+
+.swiper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.swiper img {
+  width: 150px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.swiper img:last-child {
+  margin-right: 0;
+}
+
+.stories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stories img {
+  width: 30rem;
+  
+}
+
+.footer {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  flex-direction: column;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  margin: 6rem 3.5rem;
+  line-height: 3rem;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.mailing-socials{
+  margin-right: 20rem;
+  flex-grow: 3;
+}
+
+.mailing-socials ul {
+  margin-top: 4rem;
+}
+
+.mailing-socials li, .pay-icons li {
+  margin-right: 2rem;
+  font-size: 175%;
+  letter-spacing: .13px;
+  line-height: 1.5384;
+}
+
+.help-menu, .site-menu {
+  flex-direction: column;
+  margin-right: 10rem;
+}
+
+.help-menu ul, .site-menu ul {
+  flex-direction: column;
+  
+}
+
+.trust {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 6rem 3.5rem;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.trust-content {
+  width: 20%;
+  margin: 4rem 0;
+  border-right: 1px solid #000;
+}
+
+.trust-content:last-child {
+  border: none;
+}
+
+.wishlist {
+  text-align: left;
+  margin: 6rem 3.5rem;
+}
+
+.email-field {
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+}
+
+.email-field:focus {
+  border: transparent;
+}
+
+.country-selector, .relative {
+  margin-left: 3.5rem;
+  text-align: left;
+}
+
+.ar-global {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 3.5rem;
+}
+
+.legal li {
+  margin-right: 2rem;
+  letter-spacing: .13px;
+  line-height: 1.5384;
+}
+
+/* tablet */
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
